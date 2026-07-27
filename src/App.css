@@ -1,3 +1,88 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem 2rem;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+nav div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #e8efe8;
+}
+
+.tours-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.tour-card {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.tour-card-content {
+  padding: 1.5rem;
+}
+
+.tour-card button {
+  padding: 0.75rem 1.25rem;
+  color: white;
+  background-color: #285943;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
