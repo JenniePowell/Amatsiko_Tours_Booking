@@ -5,8 +5,8 @@ import "./TourCard.css";
 function TourCard({ tour }) {
     const navigate = useNavigate();
 
-    const handleBookingClick = () => {
-        navigate(`/tours/${tour.id}/book`);
+    const handleViewClick = () => {
+        navigate(`/tours/${tour.id}`);
     };
 
     return (
@@ -28,12 +28,7 @@ function TourCard({ tour }) {
 
                 <p className='tour-price'>{tour.price}</p>
 
-                <button type="button" onClick={() => setShowBookingForm(true)}>View this tour</button>
-            
-            {showBookingForm && (
-                <BookingForm tour={tour} onClose={() => setShowBookingForm(false)}/>
-        )}
-            
+                <button type="button" onClick={handleViewClick}>View this tour</button>
             </div>
         </article>
     );
