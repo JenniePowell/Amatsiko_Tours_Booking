@@ -6,6 +6,8 @@ import Tours from "./pages/Tours";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
+import BookTour from "./pages/BookTour";
+import ProtectedRoute from "./auth/ProtectedRoute";
 
 function App() {
   return (
@@ -18,7 +20,22 @@ function App() {
             <Route path="/tours" element={<Tours />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/my-bookings" element={<MyBookings />} />
+            <Route
+              path="/tours/:tourId/book"
+              element={
+                <ProtectedRoute>
+                  <BookTour />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/my-bookings"
+              element={
+                <ProtectedRoute>
+                  <MyBookings />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
         </main>
 

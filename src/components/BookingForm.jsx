@@ -2,7 +2,7 @@ import { useState } from 'react';
 import "./BookingForm.css";
 
 
-function BookingForm({ tour }) {
+function BookingForm({ tour, onClose }) {
     const [formData, setFormData] = useState({
         travelDate: '',
         numberOfGuests: 1,

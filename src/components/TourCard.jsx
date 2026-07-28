@@ -1,10 +1,13 @@
-import { useState } from 'react';
-import BookingForm from './BookingForm';
+import { useNavigate } from 'react-router-dom';
 import "./TourCard.css";
 
 
 function TourCard({ tour }) {
-    const [showBookingForm, setShowBookingForm] = useState(false);
+    const navigate = useNavigate();
+
+    const handleBookingClick = () => {
+        navigate(`/tours/${tour.id}/book`);
+    };
 
     return (
         <article className="tour-card">
