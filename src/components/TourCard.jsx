@@ -23,7 +23,7 @@ function TourCard({ tour }) {
 
                 <p className='tour-description'>{tour.description}</p>
 
-                <p className='tour-price'>£{tour.price}</p>
+                <p className='tour-price'>{tour.price}</p>
 
                 <button type="button" onClick={() => setShowBookingForm(true)}>Book this tour</button>
             

@@ -5,7 +5,8 @@ const tours = [
     "description": "Shoebill canoe experience at Mabamba Swamp, Bigodi Wetland cultural experience, chimpanzee trekking in Kibale, Queen Elizabeth safari and Kazinga Channel cruise, mountain gorilla trekking in Bwindi, Batwa cultural experience, Buzaniro community visit, Lake Bunyonyi cruise, Igongo Cultural Museum, and Lake Mburo safari.",
     "duration": "10 Days",
     "price": "From $4,075 PP",
-    "location": "Kibale National Park, Queen Elizabeth National Park, Bwindi Impenetrable Forest, Lake Mburo National Park"
+    "location": "Kibale National Park, Queen Elizabeth National Park, Bwindi Impenetrable Forest, Lake Mburo National Park",
+    "image": "./assets/giraffes.jpg",
   },
   {
     "id": 2,
