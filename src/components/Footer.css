@@ -1,0 +1,15 @@
+footer {
+  font-size: 14px;
+  padding: 2rem;
+  text-align: center;
+  background-color: #023220;
+  color: white;
+}
+
+.footer-logo img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 20px;
+}

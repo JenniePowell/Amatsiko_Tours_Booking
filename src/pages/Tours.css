@@ -1,0 +1,51 @@
+.hero {
+  height: 30vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0)
+    ), url("../assets/safari.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: left;
+  padding-left: 60px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero-content {
+  text-align: left;
+  color: white;
+}
+
+.hero-pattern {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 230px; 
+  height: auto;
+  opacity: 0.2;
+}
+
+.tour-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:2rem;
+}
+
+.tours-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
