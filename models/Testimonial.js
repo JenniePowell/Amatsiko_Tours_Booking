@@ -13,9 +13,7 @@ Testimonial.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    // Stored as a plain string to match the source data
-    // e.g. "June 20, 2026"
+    },   
     date: {
       type: DataTypes.STRING,
       allowNull: true,
