@@ -10,7 +10,7 @@ function Nav() {
 
         <div className='nav-links'>
           <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/tours">View Tours</NavLink>
+          <NavLink to="/tours">Tours</NavLink>
           <NavLink to="/my-bookings">My Bookings</NavLink>
           <NavLink to="/login">Login</NavLink>
           <NavLink to="/register">Register</NavLink>

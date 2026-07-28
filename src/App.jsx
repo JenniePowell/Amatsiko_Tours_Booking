@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import Tours from "./pages/Tours";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -13,7 +14,8 @@ function App() {
 
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Tours />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/tours" element={<Tours />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/my-bookings" element={<MyBookings />} />
