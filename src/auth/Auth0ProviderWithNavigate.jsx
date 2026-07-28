@@ -4,10 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const domain = import.meta.env.VITE_AUTH0_DOMAIN;
 const clientId = import.meta.env.VITE_AUTH0_CLIENT_ID;
 
-// Wraps the app with Auth0Provider, but plugs Auth0's redirect callback into
-// react-router so that after login/signup the user lands back on whichever
-// page they were trying to reach (e.g. a specific tour's booking page)
-// instead of always being sent to "/".
 function Auth0ProviderWithNavigate({ children }) {
   const navigate = useNavigate();
 
