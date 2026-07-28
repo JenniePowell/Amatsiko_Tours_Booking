@@ -1,18 +1,13 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-
 import Tours from "./pages/Tours";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
 
-import "./App.css";
-
 function App() {
   return (
-    <BrowserRouter>
       <div className="app">
         <Nav />
 
@@ -27,7 +22,6 @@ function App() {
 
         <Footer />
       </div>
-    </BrowserRouter>
   );
 }
 

@@ -3,6 +3,7 @@
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  width: 100%;
 }
 
 .tour-card img {
@@ -15,11 +16,26 @@
   padding: 1.5rem;
 }
 
-.tour-card button {
-  padding: 0.75rem 1.25rem;
-  color: white;
-  background-color: #E2725C;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
+.tour-card h3 {
+  font-size: 24px;
+  color: #E2725C;
+}
+
+.tour-detail {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+}
+
+.tour-detail i {
+  color: #e2725c;
+  font-size: 1.1rem;
+}
+
+.tour-price {
+  font-family: 'Abril Fatface', serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }

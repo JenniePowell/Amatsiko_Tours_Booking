@@ -8,16 +8,22 @@ function TourCard({ tour }) {
 
     return (
         <article className="tour-card">
-            <img src={tour.image} alt={tour.title} />
+            <img src={tour.image} alt={tour.title} className="tour-image" />
         
             <div className="tour-card-content">
-                <h2>{tour.title}</h2>
+                <h3>{tour.title}</h3>
 
-                <p>{tour.location}</p>
-                <p>{tour.duration}</p>
+                <p className='tour-detail'>
+                    <i className="bi bi-geo-alt"></i>
+                    <span>{tour.location}</span></p>
+
+                <p className='tour-detail'>
+                    <i className="bi bi-calendar3"></i>
+                    <span>{tour.duration}</span></p>
+
                 <p>{tour.description}</p>
 
-                <p><strong>£{tour.price}</strong></p>
+                <p className='tour-price'>£{tour.price}</p>
 
                 <button type="button" onClick={() => setShowBookingForm(true)}>Book this tour</button>
             
