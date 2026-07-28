@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import { tours } from '../data/tour';
+import { tours } from '../data/tours';
 import BookingForm from '../components/BookingForm';
 
 function BookTour() {
