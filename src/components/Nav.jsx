@@ -12,7 +12,8 @@ function Nav() {
         <NavLink to="/" className="logo"><img src={logo} alt="Amatsiko Tours" /></NavLink>
 
         <div className='nav-links'>
-          <NavLink to="/" end>Tours</NavLink>
+          <NavLink to="/" end>Home</NavLink>
+          <NavLink to="/tours">Tours</NavLink>
           <NavLink to="/my-bookings">My Bookings</NavLink>
 
           {!isLoading && isAuthenticated && (

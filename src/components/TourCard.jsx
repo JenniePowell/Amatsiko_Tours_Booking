@@ -28,9 +28,12 @@ function TourCard({ tour }) {
 
                 <p className='tour-price'>{tour.price}</p>
 
-                <button type="button" onClick={handleBookingClick}>
-                    Book this tour
-                </button>
+                <button type="button" onClick={() => setShowBookingForm(true)}>View this tour</button>
+            
+            {showBookingForm && (
+                <BookingForm tour={tour} onClose={() => setShowBookingForm(false)}/>
+        )}
+            
             </div>
         </article>
     );
