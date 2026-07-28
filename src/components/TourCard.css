@@ -33,6 +33,11 @@
   font-size: 1.1rem;
 }
 
+.tour-description {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
 .tour-price {
   font-family: 'Abril Fatface', serif;
   font-weight: 900;

@@ -21,7 +21,7 @@ function TourCard({ tour }) {
                     <i className="bi bi-calendar3"></i>
                     <span>{tour.duration}</span></p>
 
-                <p>{tour.description}</p>
+                <p className='tour-description'>{tour.description}</p>
 
                 <p className='tour-price'>£{tour.price}</p>
 
