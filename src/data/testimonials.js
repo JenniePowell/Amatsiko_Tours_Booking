@@ -1,6 +1,3 @@
-export const tours = []
-
-
 export const testimonials = [
   {
     id: 1,
