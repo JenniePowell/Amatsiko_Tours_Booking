@@ -25,7 +25,7 @@ function TourCard({ tour }) {
 
                 <p className='tour-price'>{tour.price}</p>
 
-                <button type="button" onClick={() => setShowBookingForm(true)}>Book this tour</button>
+                <button type="button" onClick={() => setShowBookingForm(true)}>View this tour</button>
             
             {showBookingForm && (
                 <BookingForm tour={tour} onClose={() => setShowBookingForm(false)}/>
