@@ -1,9 +1,9 @@
 const sequelize = require("../config/connection");
-const { User, Tour, Booking, Testimonial } = require("../models");
+const { User, Tour, Booking, Testimonial } = require("./models");
 
 const tourData = require("./tour.json");
-const bookingData = require("./bookings.json");
-const testimonialData = require("./testimonials.json");
+const bookingData = require("./seeds/bookings.json");
+const testimonialData = require("./seeds/testimonials.json");
 
 const userData = [
   {
