@@ -1,4 +1,4 @@
-export const tours = [
+const tours = [
   {
     "id": 1,
     "title": "10-Day Uganda Gorilla, Wildlife & Cultural Safari",
@@ -216,3 +216,5 @@ export const tours = [
     "location": "Bwindi Impenetrable National Park"
   }
 ]
+
+export default tours;
