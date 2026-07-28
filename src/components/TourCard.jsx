@@ -1,10 +1,13 @@
-import { useState } from 'react';
-import BookingForm from './BookingForm';
+import { useNavigate } from 'react-router-dom';
 import "./TourCard.css";
 
 
 function TourCard({ tour }) {
-    const [showBookingForm, setShowBookingForm] = useState(false);
+    const navigate = useNavigate();
+
+    const handleBookingClick = () => {
+        navigate(`/tours/${tour.id}/book`);
+    };
 
     return (
         <article className="tour-card">
@@ -25,12 +28,9 @@ function TourCard({ tour }) {
 
                 <p className='tour-price'>{tour.price}</p>
 
-                <button type="button" onClick={() => setShowBookingForm(true)}>Book this tour</button>
-            
-            {showBookingForm && (
-                <BookingForm tour={tour} onClose={() => setShowBookingForm(false)}/>
-        )}
-            
+                <button type="button" onClick={handleBookingClick}>
+                    Book this tour
+                </button>
             </div>
         </article>
     );
