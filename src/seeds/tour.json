@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "title": "10-Day Uganda Gorilla, Wildlife & Cultural Safari",
+    "description": "Shoebill canoe experience at Mabamba Swamp, Bigodi Wetland cultural experience, chimpanzee trekking in Kibale, Queen Elizabeth safari and Kazinga Channel cruise, mountain gorilla trekking in Bwindi, Batwa cultural experience, Buzaniro community visit, Lake Bunyonyi cruise, Igongo Cultural Museum, and Lake Mburo safari.",
+    "duration": "10 Days",
+    "price": "From $4,075 PP",
+    "location": "Kibale National Park, Queen Elizabeth National Park, Bwindi Impenetrable Forest, Lake Mburo National Park"
+  },
+  {
+    "id": 2,
+    "title": "1-Day Lake Victoria Sunset Cruise",
+    "description": "Scenic sunset cruise on Lake Victoria with spectacular African sunset views, relaxing boat ride with local crew, birdwatching, complimentary drink and light snack, departing from Entebbe.",
+    "duration": "1 Day",
+    "price": "From $40",
+    "location": "Uganda"
+  },
+  {
+    "id": 3,
+    "title": "1-Day Mabamba Shoebill Tour",
+    "description": "Search for the rare Shoebill Stork by traditional canoe, spot over 300 bird species, enjoy views of Lake Victoria and papyrus wetlands, guided by a local birding expert, half-day tour from Entebbe supporting community conservation.",
+    "duration": "1 Day",
+    "price": "From $60 PP",
+    "location": "Mabamba Wetland"
+  },
+  {
+    "id": 4,
+    "title": "8 Days Uganda Safari: Gorillas, Chimpanzees, Big Four & Community Conservation Experience",
+    "description": "Mountain gorilla trekking, chimpanzee tracking in Kibale, Big Four wildlife viewing, Kazinga Channel boat cruise, Lake Bunyonyi experience, walking safari in Lake Mburo, Batwa cultural experience, Amatsiko community conservation visit, equator crossing and crater lakes.",
+    "duration": "8 Days",
+    "price": "From $3,360 PP",
+    "location": "Bwindi Impenetrable National Park, Kibale Forest National Park, Queen Elizabeth National Park, Lake Mburo National Park"
+  },
+  {
+    "id": 5,
+    "title": "5 Days Best of Uganda Safari from Kigali \u2013 Gorillas, Chimps & Wildlife Adventure",
+    "description": "Gorilla trekking in Bwindi, chimpanzee trekking in Kyambura Gorge, game drives in Queen Elizabeth National Park, Kazinga Channel boat cruise, Batwa cultural experience, Lake Bunyonyi boat excursion, scenic cross-border journey from Rwanda to Uganda.",
+    "duration": "5 Days",
+    "price": "From $2,690 PP",
+    "location": "Bwindi Impenetrable Forest, Kyambura Gorge, Queen Elizabeth National Park"
+  },
+  {
+    "id": 6,
+    "title": "14 Days: Journey Through Uganda's Wildlife, Culture & Community",
+    "description": "Rhino tracking, game drives, Nile boat safari, Murchison Falls, chimpanzee tracking, gorilla trekking, golden monkey tracking, walking with giraffes, traditional cooking lessons and crafts, Ankole cattle cultural experience.",
+    "duration": "14 Days",
+    "price": "From $5,250 USD",
+    "location": "Murchison Falls National Park"
+  },
+  {
+    "id": 7,
+    "title": "2-Day Akagera Luxury Safari & Boat Cruise \u2013 Rwanda Wildlife Experience",
+    "description": "Big Five game drives in Akagera National Park, scenic boat cruise spotting hippos, crocodiles and birds, luxury lodge accommodation with meals included, expert guides, pickup and drop-off from Kigali.",
+    "duration": "2 Days",
+    "price": "From $992",
+    "location": "Akagera National Park"
+  },
+  {
+    "id": 8,
+    "title": "1-Day Golden Monkey Trekking \u2013 Volcanoes National Park, Rwanda",
+    "description": "Trek through the lush Volcanoes National Park forest to see endangered golden monkeys, forest exploration spotting other primates and birds, convenient Kigali pickup and drop-off with expert guides.",
+    "duration": "1 Day",
+    "price": "From $400",
+    "location": "Volcanoes National Park"
+  },
+  {
+    "id": 9,
+    "title": "Lake Mburo and Kibale Forest Safari Uganda",
+    "description": "Lake Mburo National Park game drives, walking and bicycle safaris, boat cruise on Lake Mburo, chimpanzee trekking in Kibale Forest, scenic forest walks, comfortable lodge stays.",
+    "duration": "5 Days",
+    "price": "From $1,760",
+    "location": "Lake Mburo National Park, Kibale Forest National Park"
+  },
+  {
+    "id": 10,
+    "title": "9 Days: Amatsiko's Western Uganda with Impact Experience",
+    "description": "Trek endangered mountain gorillas in Bwindi and connect with Batwa culture through music and storytelling. Immerse yourself in community life through farming, cooking, school visits, and women's cooperatives. Canoe across Lake Bunyonyi and take part in conservation activities like tree planting and beehive donations.",
+    "duration": "9 Days",
+    "price": "From $3,200 USD",
+    "location": "Bwindi Impenetrable National Park"
+  },
+  {
+    "id": 11,
+    "title": "6 Days: Culinary Themed Regional Experience",
+    "description": "Hands-on cooking with women's groups, families, and farmers. Vibrant market visit with ingredient shopping. Organic farm experiences with planting, harvesting, and beekeeping. School garden projects and community feast preparation. Lakeside stays and fireside stories.",
+    "duration": "6 Days",
+    "price": "From $1,994 USD",
+    "location": "Uganda"
+  },
+  {
+    "id": 12,
+    "title": "5 Days: Back-to-Basics Nature Experience",
+    "description": "Cultural drumming and dance evening with local musicians supporting youth music programmes. Forest immersion walk with birdwatching, medicinal plant lessons, and survival skills. Community farming and shared cooking with local families, ending in a farm-to-table feast by the lake.",
+    "duration": "5 Days",
+    "price": "From $2,099 USD",
+    "location": "Uganda"
+  },
+  {
+    "id": 13,
+    "title": "14-Day: Uganda\u2013Rwanda Safari Itinerary",
+    "description": "Game drives, boat trip on the Nile to Murchison Falls, chimpanzees and 12 other monkey species in Kibale Forest, Kazinga Channel boat trip, tree climbing lions in Ishasha, and mountain gorillas in Bwindi National Park.",
+    "duration": "14 Days",
+    "price": "From $4,400 USD",
+    "location": "Murchison Falls National Park, Kibale Forest National Park, Queen Elizabeth National Park, Ishasha, Bwindi Impenetrable National Park"
+  },
+  {
+    "id": 14,
+    "title": "9-Day: Mist, Mountains & Majestic Wildlife: Rwanda\u2013Uganda Adventure",
+    "description": "Gorilla trekking in Bwindi Impenetrable National Park, boat cruise on Lake Bunyonyi, chimpanzee tracking in Kibale Forest, game drives and boat safari in Queen Elizabeth National Park, cultural immersion and community engagement.",
+    "duration": "9 Days",
+    "price": "From $2,992 USD",
+    "location": "Bwindi Impenetrable National Park, Kibale Forest National Park, Queen Elizabeth National Park"
+  },
+  {
+    "id": 15,
+    "title": "1-Day: Lake Bunyonyi Cultural & Adventure Tour",
+    "description": "Boat cruise and scenic hike at Lake Bunyonyi, learn traditional crafts (basket weaving & mat-making), cultural exchange with local elders and music, support community projects for orphans and sustainability.",
+    "duration": "1 Day",
+    "price": "From $176 USD",
+    "location": "Lake Bunyonyi"
+  },
+  {
+    "id": 16,
+    "title": "2-Day: Lake Bunyonyi and Volunteering Experience",
+    "description": "Volunteer at Amatsiko School with local children, boat cruise and scenic hike at Lake Bunyonyi, learn traditional crafts (basket weaving & mat-making), cultural exchange with local elders and music, support community projects for orphans and sustainability.",
+    "duration": "2 Days",
+    "price": "From $490 USD",
+    "location": "Lake Bunyonyi"
+  },
+  {
+    "id": 17,
+    "title": "3-Day: Volunteering, Gorilla Trekking, Cultural Immersion",
+    "description": "Volunteer at Amatsiko Preparatory School and engage with local children, gorilla trekking in Bwindi Impenetrable National Park, relaxing boat cruise on Lake Bunyonyi with island visits, local crafts and cultural immersion.",
+    "duration": "3 Days",
+    "price": "From $1,822 USD",
+    "location": "Bwindi Impenetrable National Park"
+  },
+  {
+    "id": 18,
+    "title": "2-Day Lake Mburo Wildlife Safari Experience",
+    "description": "Stop at the Equator for photo moments, game drive to spot zebras, giraffes, buffaloes & birds, walking safari with close-up wildlife encounters, boat cruise to see hippos, crocodiles & waterbirds.",
+    "duration": "2 Days",
+    "price": "From $1,430 USD",
+    "location": "Lake Mburo National Park"
+  },
+  {
+    "id": 19,
+    "title": "4-Day: Cultural Experience, Volunteering & Wildlife Tour",
+    "description": "Cultural experience & cruise on Lake Bunyonyi, volunteer at Amatsiko Preparatory School, game drive in Lake Mburo National Park, boat cruise & safari in Queen Elizabeth National Park, chimpanzee tracking in Kalinzu Forest, transfer to Kigali.",
+    "duration": "4 Days",
+    "price": "From $1,650 USD",
+    "location": "Lake Mburo National Park, Queen Elizabeth National Park"
+  },
+  {
+    "id": 20,
+    "title": "11-Day Uganda Adventure: Gorillas, Savannahs & Community Connections",
+    "description": "Game drives in Murchison Falls and Queen Elizabeth National Parks, boat cruises on the Nile and Kazinga Channel, chimpanzee trekking in Kibale and gorilla trekking in Bwindi, relaxation at Lake Bunyonyi with community visits, exploring Lake Mburo on foot and by vehicle.",
+    "duration": "11 Days",
+    "price": "From $3,400 USD",
+    "location": "Murchison Falls National Park, Queen Elizabeth National Park, Kibale National Park, Bwindi Impenetrable National Park, Lake Mburo National Park"
+  },
+  {
+    "id": 21,
+    "title": "5-Day: Gorillas & Lakes: Journey of Adventure & Impact",
+    "description": "Mountain gorilla trekking in Bwindi, visit to the Batwa community, exploring Lake Bunyonyi, game drives in Queen Elizabeth National Park, boat cruise on the Kazinga Channel.",
+    "duration": "5 Days",
+    "price": "From $1,993 USD",
+    "location": "Bwindi Impenetrable National Park, Queen Elizabeth National Park"
+  },
+  {
+    "id": 22,
+    "title": "5 Day Uganda Safari: Chimpanzee Trekking, Wildlife & Crater Lakes",
+    "description": "Track wild chimpanzees in Kibale Forest, walking safari in Lake Mburo National Park, game drive to spot zebra, impalas, buffalo, and more, cruise on Lake Mburo watching hippos, crocodiles & birdlife, visit to Crater Lakes with volcanic scenery.",
+    "duration": "5 Days",
+    "price": "From $1,320 USD",
+    "location": "Kibale Forest National Park, Lake Mburo National Park"
+  },
+  {
+    "id": 23,
+    "title": "4 Day Uganda Wildlife & Gorilla Safari",
+    "description": "Game drives in Queen Elizabeth National Park to spot lions, elephants & more, boat safari on the Kazinga Channel with hippos, crocodiles & rich birdlife, gorilla trekking in Bwindi Impenetrable Forest, Batwa community cultural experience.",
+    "duration": "4 Days",
+    "price": "From $1,770 USD",
+    "location": "Queen Elizabeth National Park, Bwindi Impenetrable Forest"
+  },
+  {
+    "id": 24,
+    "title": "3-Day Gorilla Trekking & Lake Bunyonyi Experience",
+    "description": "Track endangered mountain gorillas in Bwindi Impenetrable Forest, cultural encounter with the Batwa community, relax at scenic Lake Bunyonyi with optional canoe rides, scenic drives through Uganda's rolling hills and countryside.",
+    "duration": "3 Days",
+    "price": "From $1,914 USD",
+    "location": "Bwindi Impenetrable Forest, Lake Bunyonyi"
+  },
+  {
+    "id": 25,
+    "title": "3 Day Queen Elizabeth National Park Safari Uganda",
+    "description": "Game drive in Queen Elizabeth National Park to spot elephants, lions & more, Kazinga Channel boat safari with hippos, crocodiles & rich birdlife, chimpanzee trekking in Kalinzu Forest, scenic stops at Equator, Karegyeya Rock & Kitagata Hot Springs.",
+    "duration": "3 Days",
+    "price": "From $539 USD",
+    "location": "Queen Elizabeth National Park, Kalinzu Forest"
+  },
+  {
+    "id": 26,
+    "title": "1-Day: Gorilla Trekking Adventure",
+    "description": "Trek through Bwindi or Mgahinga to encounter mountain gorillas, scenic sunrise drive through Uganda's misty hills, spend one unforgettable hour with a gorilla family, guided by expert Uganda Wildlife Authority rangers.",
+    "duration": "1 Day",
+    "price": "From $1,153 USD",
+    "location": "Bwindi Impenetrable Forest, Mgahinga Gorilla National Park"
+  },
+  {
+    "id": 27,
+    "title": "7-Day: Safari of People, Wildlife and Culture",
+    "description": "Hands-on cultural experiences learning traditional crafts, cooking, and local customs. Volunteer at Amatsiko School engaging with students and supporting community projects. Explore Lake Bunyonyi and visit the Batwa Pygmy community. Contribute to sustainable agriculture in rural villages. Gorilla trekking encountering mountain gorillas in their natural habitat.",
+    "duration": "7 Days",
+    "price": "From $2,996 USD",
+    "location": "Bwindi Impenetrable National Park"
+  }
+]
