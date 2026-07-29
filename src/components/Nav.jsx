@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 import "./Nav.css";
 
 function Nav() {
-  const { isAuthenticated, isLoading, user, logout } = useAuth0();
+  const { isAuthenticated, isLoading, user, logout, loginWithRedirect } = useAuth0();
 
   return (
     <header>
@@ -31,8 +31,20 @@ function Nav() {
 
           {!isLoading && !isAuthenticated && (
             <>
-              <NavLink to="/login">Login</NavLink>
-              <NavLink to="/register">Register</NavLink>
+              <button
+                type="button"
+                className="nav-link-btn"
+                onClick={() => loginWithRedirect()}
+              >
+                Log In
+              </button>
+              <button
+                type="button"
+                className="nav-link-btn"
+                onClick={() => loginWithRedirect({ authorizationParams: { screen_hint: "signup" } })}
+              >
+                Register
+              </button>
             </>
           )}
         </div>
