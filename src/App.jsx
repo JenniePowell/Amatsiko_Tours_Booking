@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import About from "./pages/About.jsx";
 import Tours from "./pages/Tours";
 import TourDetails from "./pages/TourDetails";
 import Login from "./pages/Login";
@@ -18,6 +19,7 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/tours/:tourId" element={<TourDetails />} />
             <Route path="/login" element={<Login />} />
