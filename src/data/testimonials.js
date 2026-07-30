@@ -3,49 +3,49 @@ export const testimonials = [
     id: 1,
     name: 'Lorraine',
     date: 'June 20, 2026',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocI3d8YP1ZjGAclJxIgukPNs1znNL0tL-PjIer3jT8K20joFZw=w108-h108-p-rp-mo-ba12-br100',
     excerpt: 'A truly wonderful experience of Uganda on a two weeks itinerary created for us by Alex, one of the owners of Amatsiko Tours. Accommodation was perfect, meals were delicious and we were welcomed into local communities and gained insights into community life. We enjoyed extraordinary wildlife experiences - gorilla and chimpanzee trekking, walking safaris with rhinos, zebras and giraffes, multiple game drives and the fabulous natural beauty of this beautiful country. Amatsiko’s owners are very special people and our visit to Uganda could not have been better.',
   },
 
   {id: 2,
     name: 'Sophie Schneeberger',
     date: 'March 7, 2026',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjXu0lohVMMSpFmLoWUA1CQ0uvLWsO71pP2d7LnQcoOkizjc70se=w108-h108-p-rp-mo-ba12-br100',
     excerpt: "Wow where to begin with this experience! First, let's say we were easily the most difficult clients they must have had, throwing them curve balls left and right. From missed flights, to missing baggage, to itinerary changes, plus the added challenge of us working on a film project while with them, Alex and Alfonse made us feel calm and easy in what otherwise would have been a very stressful situation. Even my phone broke while on the trip, and these guys kept me from having a panic attack while they got my phone repaired. But let's talk about the tours- with these guys, you're going to get the REAL REAL of Uganda. If you'd like to be surrounded by other tourists, this is not the company for you. Off the beaten path, we saw Uganda like no others do, yet we were happy and comfortable the whole time. Incredible experiences like gorilla tracking were even better because they gave us the best advice on how to prepare. Furthermore, the profit they make on the tours goes straight to educating rural children in Uganda at the school they founded, which we saw in person and enjoyed interacting with the kids. If you want a unique experience with the added benefit of supporting a cause, this is the company to use when you go to Uganda. In the end we were sad to say goodbye to Alex and Alphonse, our new but close friends, and we will be back to see them again!",
   },
 
   {id: 3,
     name: 'Hiren Patel',
     date: 'December 12, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocJBetRTtxaD4abg_2kHvFoifnMAc4GaKQn8NA-LSU5i2UL6Ag=w108-h108-p-rp-mo-ba12-br100',
     excerpt: "We had an incredible experience with Amatsiko Tours and would choose them again without hesitation!! We were three American travelers on a custom 2-day safari through Queen Elizabeth National Park and from the start it was clear how special this company is. Their mission is truly beautiful- knowing that all of their profits go back to supporting the school they founded makes traveling with them even more meaningful. Alex and Alfonso personally traveled with us the entire time and even came all the way to Bwindi to pick us up. They were professional, calm, and very transparent throughout the trip. When we ran into a few issues like road closures, they explained everything clearly and always let us decide what to do next. Their 4x4 safari vehicle with an open roof is perfect for safari and made the experience even better. Over the course of the trip, we saw lions, a leopard, elephants, hippos, crocodiles, antelope, and topi which all thanks to their knowledge and timing. They also arranged smooth transport all the way to Entebbe airport making everything stress free from start to finish. Their prices are very fair, and we hope to travel with them again someday and hopefully visit their school as well as their mission is really so special!!",
   },
 
   {id: 4,
     name: 'Marilyn Jolly',
     date: 'June 20,2026',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocKGcHYew0SHCvY-WEwxjv9v6YA703LIW-fJCb5r7H9BDpPxUg=w108-h108-p-rp-mo-br100',
     excerpt:"Spent 2 weeks touring Uganda with Amatsiko Tours(Alex) wonderful itinerary that ensured all aspects of Uganda addressed. The care and attention was excellent which made us feel safe and secure. Loved every minute of the adventure and would recommend Amatsiko to anyone wanting to visit and experience authentic Uganda.",
   },
 
   {id: 5,
     name: 'Zed Boucher-Myers',
     date: 'September 3, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjV73g9TGJ-Y_Oq3e0h3Rvw7tQZFuR6jJvcen-q5_GBSUHBnlMk4wg=w108-h108-p-rp-mo-ba12-br100',
     excerpt: "I had the pleasure today of spending time with Amatsiko tours doing various activities around Lake Bunyoni. We started off going to the Arbiary and meeting the local Bees. I knew that I was going to be in good hands, by watching how founder Alex and his helper Robert treated the Bees. With patience and respect. It was incredible! And the best part was tasting pure, glorious honey from the hive! Then we moved to Chabahinga by boat to hike up to our next stop, The Herbalist. Meeting 75 year old Mzee Gad was like stepping back in time. His knowledge of the local plants is unsurpassed and he shared his knowledge with wit and a twinkle in his eye. We continued our climb to Mrs Anna's homestead where a cooking and craft class awaited us. All meals are prepared on coal fires and consist of mostly starches and vegetables. While our food was cooking we then had time to learn how to make what seemed to be a simple bangle! How they laughed at my clumsy fingers! Luckily Anna's son was deft and helped me finish. We then enjoyed the local food and ended our meal with another spoonful of delicious honey. This has been the highlight of my stay and cannot recommend it highly enough. Both Alex and Robert were super patient with me as I'm not the fittest hiker! Do experience this wonderful outing when you are at Lake Bunyoni, you will not be sorry.",
   },
 
   {id: 6,
     name: 'Bella',
     date: 'August 20, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocLrbCf39ndqSriEKogzPM9j9Vc4HW3JFeT06vcBxUeD19UKgw=w108-h108-p-rp-mo-br100',
     excerpt: "Had an extremely great day at Lake Bunyonyi thanks to Amasiko. I appreciate that they go beyond regular tourist activities and work to connect you with locals and getting a real Ugandan experience. They were extremely welcoming and made the whole day very comfortable. Would definitely recommend.",
   },
 
   {id: 7,
     name: "Maya Gordon",
     date: 'November 30, 2024',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocK8sv7fhmDXsXHKiXpH7vQu3qIgQmP528l84G-QEX4nloL3Tg=w108-h108-p-rp-mo-br100',
     excerpt:
       "Our experience with Amatsiko Tours was nothing short of extraordinary! My kids and I had the opportunity to volunteer and travel in Uganda, and we were deeply touched by the kindness and warmth of the Amatsiko team. From the moment we arrived, we felt incredibly welcomed and cared for. The team’s genuine hospitality and passion for their work made our journey unforgettable. They not only organized everything flawlessly but also created a wonderful environment. Volunteering alongside them was a heartwarming experience, and traveling with them allowed us to see Uganda in the most authentic and meaningful way. Thank you, Amatsiko Tours, for your exceptional service and for sharing your beautiful country with us in such a personal and inspiring way. We will cherish these memories forever!" 
   },
@@ -53,7 +53,7 @@ export const testimonials = [
   {id: 8,
     name: 'AMBÚ Audiovisual',
     date: 'October 3, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjUvtRmzSm5axh1ROWYpmYz7VVxftDep0S0KnnqDf6PPp_-uPVhV=w108-h108-p-rp-mo-br100',
     excerpt:
       "We can say not only they were the best touroperators but also that they have become our friends. We went with them to experience the truth about the communities in Lake Bunyonyi, also we experienced their project of beekeeping (an example of nature conservation, selfsustainability and helping others) and we visited their school, which is the main activity for what our profits will go, helping needy children learn, eat, feel loved and definitely... Smile.",
   },
@@ -61,7 +61,7 @@ export const testimonials = [
   {id: 9,
     name: 'Tumuhereze Marius',
     date: 'September 12, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjUExOVX7GMpFE_lgZboCEok0X0yV777bYaMN8jSANaqsISaz8KT=w108-h108-p-rp-mo-br100',
     excerpt:
       "It is a company that makes you feel home with ease. Backed up by pleasant tours around the jungle, nature ,communities and other happening places. There is nothing like regretting when you choose Amatsiko tours Ltd. Humbled by the services",
   },
@@ -69,7 +69,7 @@ export const testimonials = [
   {id: 10,
     name: 'Issam Lafquih',
     date: 'October 15, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjXTxFjy9TKQE183TQJx6aZsYCPvW02Pzf8KzLpzRIaNZMrBnVc=w108-h108-p-rp-mo-br100',
     excerpt:
       "Hello, I would like to thank Amastiko for their expertise and their organization of the trips. It was an experience rich in adventure and cultural knowledge. Thank you to the team and especially a big thank you to the magnificent guide (EMMANUEL Mwijuka) whom I highly recommend. Thank you again.❤️",
   },
@@ -77,7 +77,7 @@ export const testimonials = [
   {id: 11,
     name: 'emmanuel mwijuka',
     date: 'September 11, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjXTACWYHgvJMc8AX7q71jYLaT91bU-tLV1uxY3hfgAKbCuon5ar=w108-h108-p-rp-mo-br100',
     excerpt:
       "It's a great travel company where you experience cultural adventures that connects you to the heart of Uganda and East Africa",
   },
@@ -86,7 +86,7 @@ export const testimonials = [
     id: 12,
     name: 'Annitah Atwebembeire',
     date: 'September 19, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocKO22GiSybffmOqeX56syd5NY1qcl5VSja31FXTC-bJHSyIPw=w108-h108-p-rp-mo-br100',
     excerpt:
       "Travelling with Amatsiko Tours helped me return home with more interesting stories about culture💚",
   },
@@ -94,7 +94,7 @@ export const testimonials = [
   {id: 13,
     name: 'Arinda Mark',
     date: 'September 7, 2025',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a/ACg8ocIglBCB_J01Lf6Y2C-fmbcfn1eDGznB7KtP8Wet21NfW1nIxYk=w108-h108-p-rp-mo-br100',
     excerpt:
       "Number one in supporting local communities. I love this",
   },
@@ -102,7 +102,7 @@ export const testimonials = [
   {id: 14,
     name: 'YSHR NTHR',
     date: 'January 22, 2026',
-    pfp:'',
+    pfp:'https://lh3.googleusercontent.com/a-/ALV-UjXvVXQca5MxGb9lz1APWxfktremsw2J5SiUxgvTPA1QGODyt4_i=w108-h108-p-rp-mo-br100',
     excerpt:
       "ウガンダからルワンダにかけて8日間のプライベートツアーに一人で参加しました。専属ガイドが最初から最後まで同行し、自然や野生動物、文化や歴史について、わかりやすい英語で丁寧に説明してくれたため、安心して深く理解しながら旅を楽しむことができました。旅の前半では、レイク・ムブロ国立公園やクイーン・エリザベス国立公園でのゲームドライブ、徒歩サファリ、ボートクルーズなど、多様な形で野生動物を観察できました。特にキアンブーラ渓谷でのチンパンジー・トラッキングや、カジンガ水路のボートクルーズは、動物との距離が近く、非常に印象的でした。後半のハイライトは、ブウィンディ原生林でのマウンテンゴリラ・トレッキングです。森の中で間近にゴリラを観察できた体験は、言葉では言い尽くせないほど感動的でした。また、バトワ族の文化体験や、レイク・ブニョニでの地域コミュニティ訪問など、観光だけでなく、人々の暮らしや文化に触れられる機会が多く用意されていた点も、このツアーの大きな魅力だと思います。宿泊したロッジやホテルはいずれも快適で、食事も美味しく、長距離移動やトレッキングの疲れをしっかり癒すことができました。移動中も景色の良い場所や市場、赤道記念碑などに立ち寄る工夫があり、移動時間そのものが楽しめました。このツアーを主催している Amatsiko Tours は、地域の貧しい子どもたちが通える学校を運営するNGOでもあり、ツアーの収益が教育や地域支援に使われています。旅を楽しむことが、自然保護や地域社会への貢献につながっている点にも強く共感しました。野生動物だけでなく、自然・文化・人々の暮らしまで深く知りたい方に、心からおすすめできるツアーです。",
   }
