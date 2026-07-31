@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 30vh;
+  height: 45vh;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.55),
@@ -13,6 +13,28 @@
   justify-content: left;
   padding-left: 60px;
   align-items: center;
+}
+
+.custom-shape-divider-bottom-1785438866 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1785438866 svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 91px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1785438866 .shape-fill {
+    fill: #FFFFFF;
 }
 
 .hero h1 {
@@ -39,14 +61,67 @@
   font-size: 32px;
 }
 
-.tour-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:2rem;
-}
-
 .tours-section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 3rem 2rem;
+}
+
+.tours-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.tours-filters {
+  position: sticky;
+  top: 100px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
+}
+
+.tours-filters h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tours-filters select {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  background-color: white;
+  color: #222;
+}
+
+.results-count {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.tour-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .tours-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tours-filters {
+    position: static;
+    top: auto;
+  }
 }
