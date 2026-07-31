@@ -1,0 +1,344 @@
+/* ===== Hero / two-column layout ===== */
+.tour-hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem 1rem;
+}
+
+.tour-hero-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.tour-hero-main h1 {
+  color: #023220;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.tour-hero-main p {
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* ===== Sidebar ===== */
+.tour-hero-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: sticky;
+  top: 100px;
+}
+
+.tour-overview-box {
+  background-color: #FDF0E4;
+  border: 1px solid #E2725C;
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.tour-overview-box h3 {
+  font-size: 1.05rem;
+  color: #CB5727;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.tour-overview-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.tour-overview-icons i {
+  font-size: 1.6rem;
+  color: #E2725C;
+}
+
+.tour-overview-icons h4 {
+  font-family: 'Abril Fatface', serif;
+  color: #023220;
+  font-size: 1.05rem;
+  margin: 0.4rem 0 0.3rem;
+}
+
+.tour-overview-icons p {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.sidebar-heading {
+  color: #CB5727;
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sidebar-list li {
+  padding-left: 1.4rem;
+  position: relative;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.sidebar-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #023220;
+  font-weight: bold;
+}
+
+.good-to-know-box {
+  background-color: #FDF0E4;
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.good-to-know-box p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.sidebar-book-btn {
+  width: 100%;
+}
+
+/* ===== Gallery ===== */
+.tour-gallery {
+  position: relative;
+  margin: 2.5rem 0;
+}
+
+.tour-gallery-image {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.45);
+  border: none;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.gallery-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gallery-arrow-left {
+  left: 16px;
+}
+
+.gallery-arrow-right {
+  right: 16px;
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.gallery-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.gallery-dot.active {
+  background-color: #CB5727;
+}
+
+/* ===== FAQ accordion ===== */
+.tour-faqs {
+  margin-top: 2.5rem;
+}
+
+.tour-faq {
+  border-bottom: 1px solid #E2725C;
+  padding: 1.1rem 0;
+}
+
+.tour-faq summary {
+  font-family: 'Abril Fatface', serif;
+  color: #023220;
+  font-size: 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.tour-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.tour-faq summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.2rem;
+  color: #023220;
+  font-weight: bold;
+}
+
+.tour-faq[open] summary::before {
+  content: "\2212";
+}
+
+.tour-faq p {
+  margin-top: 0.75rem;
+  padding-left: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===== CTA banner ===== */
+.tour-cta-banner {
+  position: relative;
+  background-image: linear-gradient(rgba(2, 50, 32, 0.6), rgba(2, 50, 32, 0.6)),
+    url("../assets/safari.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 3rem 0;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tour-cta-content h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.tour-cta-content p {
+  color: #f2f2f2;
+  max-width: 600px;
+}
+
+.tour-cta-btn {
+  white-space: nowrap;
+}
+
+/* ===== Itinerary + highlights + packing ===== */
+.tour-lower-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+.tour-itinerary h2 {
+  color: #023220;
+  margin-bottom: 1.5rem;
+}
+
+.tour-itinerary ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 2.5rem;
+}
+
+.tour-itinerary li {
+  line-height: 1.6;
+  color: #333;
+}
+
+.tour-lower-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.tour-highlights-box {
+  background-color: #FDF0E4;
+  border: 1px solid #E2725C;
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.tour-packing-box {
+  background-color: #eef0ee;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 1.75rem;
+  align-self: start;
+}
+
+.tour-highlights-box h3,
+.tour-packing-box h3 {
+  color: #023220;
+  margin-bottom: 1rem;
+}
+
+.tour-highlights-box ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.tour-packing-box a {
+  color: #CB5727;
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .tour-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-hero-sidebar {
+    position: static;
+    top: auto;
+  }
+
+  .tour-cta-banner {
+    padding: 2.5rem 1.75rem;
+  }
+
+  .tour-lower-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-gallery-image {
+    height: 260px;
+  }
+}
