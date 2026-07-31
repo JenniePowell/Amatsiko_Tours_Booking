@@ -9,6 +9,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
 import BookTour from "./pages/BookTour";
+import ContactUs from "./pages/ContactUs";
+import HowToBook from "./pages/HowToBook";
 import ProtectedRoute from "./auth/ProtectedRoute";
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/tours" element={<Tours />} />
             <Route path="/tours/:tourId" element={<TourDetails />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/how-to-book" element={<HowToBook />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route

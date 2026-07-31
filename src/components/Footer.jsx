@@ -31,12 +31,12 @@ function Footer() {
 
        <div className="footer-col">
           <h4>Quick Links</h4>
-          <NavLink to="/tours">How To Book</NavLink>
+          <NavLink to="/how-to-book">How To Book</NavLink>
           <NavLink to="/tours">Tours</NavLink>
           <NavLink to="/">Gallery</NavLink>
           <NavLink to="/">About</NavLink>
           <NavLink to="/tours">Book a tour</NavLink>
-          <NavLink to="/">Contact us</NavLink>
+          <NavLink to="/contact">Contact us</NavLink>
         </div>
 
         <div className="footer-col">
