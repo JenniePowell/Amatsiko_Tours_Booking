@@ -8,9 +8,10 @@ import TourDetails from "./pages/TourDetails";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import MyBookings from "./pages/MyBookings";
-import BookTour from "./pages/BookTour";
+import BookATour from "./pages/BookATour";
 import ContactUs from "./pages/ContactUs";
 import HowToBook from "./pages/HowToBook";
+import Gallery from "./pages/Gallery";
 import ProtectedRoute from "./auth/ProtectedRoute";
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
             <Route path="/tours/:tourId" element={<TourDetails />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/how-to-book" element={<HowToBook />} />
+            <Route path="/book-a-tour" element={<BookATour />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route
