@@ -1,0 +1,59 @@
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About.jsx";
+import Tours from "./pages/Tours";
+import TourDetails from "./pages/TourDetails";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import MyBookings from "./pages/MyBookings";
+import BookTour from "./pages/BookTour";
+import BookATour from "./pages/BookATour";
+import ContactUs from "./pages/ContactUs";
+import HowToBook from "./pages/HowToBook";
+import Gallery from "./pages/Gallery";
+import ProtectedRoute from "./auth/ProtectedRoute";
+
+function App() {
+  return (
+      <div className="app">
+        <Nav />
+
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/tours" element={<Tours />} />
+            <Route path="/tours/:tourId" element={<TourDetails />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/how-to-book" element={<HowToBook />} />
+            <Route path="/book-a-tour" element={<BookATour />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route
+              path="/tours/:tourId/book"
+              element={
+                <ProtectedRoute>
+                  <BookTour />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/my-bookings"
+              element={
+                <ProtectedRoute>
+                  <MyBookings />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+  );
+}
+
+export default App;

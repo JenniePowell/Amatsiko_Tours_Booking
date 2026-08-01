@@ -1,0 +1,229 @@
+.travel-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.travel-hero {
+  background-image: linear-gradient(
+      rgba(2, 50, 32, 0.5),
+      rgba(2, 50, 32, 0.5)
+    ),
+    url("/images/travel-request-hero.webp");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin: 1.5rem 0 2.5rem;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.travel-hero-overlay {
+  padding: 2rem 1.5rem;
+  max-width: 640px;
+}
+
+.travel-hero h1 {
+  font-size: 2.75rem;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.travel-hero p {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.travel-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.travel-form {
+  background-color: #f3f6f3;
+  border-radius: 8px;
+  padding: 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.travel-form h2 {
+  color: #023220;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.travel-form h2:first-child {
+  margin-top: 0;
+}
+
+.travel-form label {
+  font-weight: bold;
+  color: #222;
+  margin-top: 0.5rem;
+}
+
+.travel-form input,
+.travel-form select,
+.travel-form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  font: inherit;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.travel-form textarea {
+  resize: vertical;
+}
+
+.field-hint {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.consent-label {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.consent-label input {
+  width: auto;
+  margin-top: 0.2rem;
+}
+
+.travel-form button[type="submit"] {
+  margin-top: 1rem;
+  justify-self: start;
+}
+
+.travel-info {
+  background-color: #023220;
+  color: white;
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.travel-info h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.travel-info p {
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.25rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.benefits-list i {
+  color: #E2725C;
+  font-size: 1.1rem;
+}
+
+.rating-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1.25rem;
+}
+
+.rating-label {
+  margin-bottom: 0.5rem !important;
+  font-weight: 600;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white !important;
+}
+
+.rating-stars i {
+  color: #f5c518;
+  font-size: 1rem;
+}
+
+.travel-cta {
+  background-color: #f3f6f3;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: 8px;
+}
+
+.travel-cta h2 {
+  color: #023220;
+  margin-bottom: 0.75rem;
+}
+
+.travel-cta p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.travel-cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #E2725C;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.travel-cta-button:hover {
+  background-color: #CB5727;
+}
+
+@media (max-width: 900px) {
+  .travel-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .travel-hero h1 {
+    font-size: 2rem;
+  }
+}
