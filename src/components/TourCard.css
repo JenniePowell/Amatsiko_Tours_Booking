@@ -1,46 +1,107 @@
-.tour-card {
-  overflow: hidden;
+.tour-row {
+  display: grid;
+  grid-template-columns: 320px 1fr;
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
-  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
 }
 
-.tour-card img {
+.tour-row-image {
+  min-height: 100%;
+}
+
+.tour-row-image img {
   width: 100%;
-  height: 220px;
+  height: 100%;
+  min-height: 260px;
   object-fit: cover;
+  display: block;
 }
 
-.tour-card-content {
-  padding: 1.5rem;
+.tour-row-content {
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.tour-card h3 {
-  font-size: 24px;
+.tour-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.tour-row-header h3 {
+  font-size: 1.4rem;
   color: #E2725C;
+  margin: 0;
+}
+
+.tour-price {
+  flex-shrink: 0;
+  background-color: #7c8f7a;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .tour-detail {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin: 0.4rem 0;
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
 }
 
 .tour-detail i {
   color: #e2725c;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
-.tour-description {
-  font-weight: 600;
-  margin-top: 20px;
+.tour-highlights {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 1rem 0 1.5rem;
+  flex-grow: 1;
 }
 
-.tour-price {
-  font-family: 'Abril Fatface', serif;
-  font-weight: 900;
-  font-size: 1.4rem;
-  margin: 1rem 0;
+.tour-highlights li {
+  margin-bottom: 0.45rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.tour-row button {
+  align-self: flex-start;
+}
+
+@media (max-width: 700px) {
+  .tour-row {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-row-image img {
+    min-height: 200px;
+  }
+
+  .tour-row-content {
+    padding: 1.5rem;
+  }
+
+  .tour-row-header {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .tour-row button {
+    align-self: stretch;
+    text-align: center;
+  }
 }
