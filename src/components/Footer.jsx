@@ -33,7 +33,7 @@ function Footer() {
           <h4>Quick Links</h4>
           <NavLink to="/how-to-book">How To Book</NavLink>
           <NavLink to="/tours">Tours</NavLink>
-          <NavLink to="/">Gallery</NavLink>
+          <NavLink to="/gallery">Gallery</NavLink>
           <NavLink to="/contact">Contact us</NavLink>
         </div>
 

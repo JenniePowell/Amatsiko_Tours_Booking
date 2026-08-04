@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import { saveToken } from "../auth/auth";
+import "./Login.css";
+
 
 function Login() {
   const navigate = useNavigate();
@@ -39,37 +41,43 @@ function Login() {
   };
 
   return (
-    <section style={{ maxWidth: "400px", margin: "40px auto" }}>
-      <h1>Log In</h1>
+    <section className="login-section">
+  <div className="login-box">
+    <h1>Log In</h1>
 
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+    <form className="login-form" onSubmit={handleSubmit}>
+      <label htmlFor="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+      />
 
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+      <label htmlFor="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
+      />
 
-        {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && (
+        <p className="login-error" role="alert">
+          {error}
+        </p>
+      )}
 
-        <button type="submit">Log In</button>
-      </form>
+      <button type="submit">Log In</button>
+    </form>
 
-      <p style={{ marginTop: "1rem" }}>
-        Don't have an account? <Link to="/register">Register</Link>
-      </p>
-    </section>
+    <p className="login-register">
+      Don&apos;t have an account? <Link to="/register">Register</Link>
+    </p>
+  </div>
+</section>
   );
 }
 

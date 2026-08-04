@@ -20,31 +20,6 @@ function HowToBook() {
         </div>
       </section>
 
-      <section className="book-intro">
-        <h2>
-          How to Book &amp; Pay for Your Safari or Gorilla Trek with Amatsiko
-          Tours Ltd.
-        </h2>
-      </section>
-
-      <section className="book-section">
-        <h2>Bank Details for Payment</h2>
-        <p className="book-note">
-          Please include your name or invoice number in the payment reference.
-        </p>
-
-        <table className="bank-table">
-          <tbody>
-            {bankDetails.map((row, index) => (
-              <tr key={index}>
-                <th>{row.label}</th>
-                <td>{row.value}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </section>
-
       <section className="book-section">
         <h2>How to Book Your Safari with Amatsiko Tours</h2>
         <p>
