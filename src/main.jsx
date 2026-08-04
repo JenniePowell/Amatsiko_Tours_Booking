@@ -5,6 +5,7 @@ import './index.css'
 import App from './App.jsx'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "leaflet/dist/leaflet.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

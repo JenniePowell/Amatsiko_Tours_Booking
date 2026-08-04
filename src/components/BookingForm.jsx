@@ -60,7 +60,10 @@ function BookingForm({ tour, onClose }) {
       <div className="booking-form-header">
         <div>
           <h2>Book {tour.title}</h2>
-          <p>{tour.location}</p>
+          <p className="booking-location">
+          <i className="bi bi-geo-alt-fill" aria-hidden="true"></i>
+          {tour.location}
+          </p>
         </div>
 
         {onClose && (
