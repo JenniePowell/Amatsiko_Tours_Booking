@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { saveToken } from "../auth/auth";
+import "./Login.css";
 
 function Register() {
   const navigate = useNavigate();
@@ -41,16 +42,18 @@ function Register() {
   };
 
   return (
-    <section style={{ maxWidth: "400px", margin: "40px auto" }}>
+  <section className="login-section">
+    <div className="login-box">
       <h1>Register</h1>
 
-      <form onSubmit={handleSubmit}>
+      <form className="login-form" onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
         <input
           type="text"
           id="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
+          autoComplete="username"
           required
         />
 
@@ -60,6 +63,7 @@ function Register() {
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          autoComplete="email"
           required
         />
 
@@ -69,20 +73,26 @@ function Register() {
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          autoComplete="new-password"
           required
           minLength={8}
         />
 
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && (
+          <p className="login-error" role="alert">
+            {error}
+          </p>
+        )}
 
         <button type="submit">Register</button>
       </form>
 
-      <p style={{ marginTop: "1rem" }}>
+      <p className="login-register">
         Already have an account? <Link to="/login">Log In</Link>
       </p>
-    </section>
-  );
+    </div>
+  </section>
+);
 }
 
 export default Register;
