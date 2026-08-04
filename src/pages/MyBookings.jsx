@@ -59,45 +59,72 @@ function MyBookings() {
   };
 
   return (
-    <section style={{ maxWidth: "800px", margin: "40px auto", padding: "0 1rem" }}>
+  <section className="login-section">
+    <div className="login-box bookings-box">
       <h1>My Bookings</h1>
 
-      {loading && <p>Loading your bookings...</p>}
+      {loading && (
+        <p className="bookings-message">Loading your bookings...</p>
+      )}
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && (
+        <p className="login-error" role="alert">
+          {error}
+        </p>
+      )}
 
       {!loading && !error && bookings.length === 0 && (
-        <p>You don't have any bookings yet.</p>
+        <div className="bookings-empty">
+          <i className="bi bi-calendar2-x" aria-hidden="true"></i>
+          <p>You don&apos;t have any bookings yet.</p>
+        </div>
       )}
 
       {!loading && !error && bookings.length > 0 && (
-        <ul style={{ listStyle: "none", padding: 0 }}>
+        <ul className="bookings-list">
           {bookings.map((booking) => (
-            <li
-              key={booking.id}
-              style={{
-                background: "white",
-                borderRadius: "8px",
-                padding: "1rem 1.25rem",
-                marginBottom: "1rem",
-                boxShadow: "0 2px 8px rgb(0 0 0 / 8%)",
-              }}
-            >
-              <h3 style={{ marginBottom: "0.5rem" }}>
+            <li className="booking-card" key={booking.id}>
+              <h3>
                 {booking.tour ? booking.tour.title : "Tour"}
               </h3>
-              <p>Travel date: {booking.travel_date}</p>
-              <p>Travellers: {booking.travellers}</p>
-              <p>Total price: ${booking.total_price}</p>
-              <button type="button" onClick={() => handleCancel(booking.id)}>
+
+              <div className="booking-details">
+                <p>
+                  <i className="bi bi-calendar-event" aria-hidden="true"></i>
+                  <span>
+                    <strong>Travel date:</strong> {booking.travel_date}
+                  </span>
+                </p>
+
+                <p>
+                  <i className="bi bi-people" aria-hidden="true"></i>
+                  <span>
+                    <strong>Travellers:</strong> {booking.travellers}
+                  </span>
+                </p>
+
+                <p>
+                  <i className="bi bi-cash-coin" aria-hidden="true"></i>
+                  <span>
+                    <strong>Total price:</strong> ${booking.total_price}
+                  </span>
+                </p>
+              </div>
+
+              <button
+                className="cancel-booking-button"
+                type="button"
+                onClick={() => handleCancel(booking.id)}
+              >
                 Cancel Booking
               </button>
             </li>
           ))}
         </ul>
       )}
-    </section>
-  );
+    </div>
+  </section>
+);
 }
 
 export default MyBookings;
