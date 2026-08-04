@@ -155,6 +155,7 @@
 .contact-form-inner {
   position: relative;
   z-index: 1;
+  margin: 2rem;
 }
 
 .contact-form-section h2 {
@@ -191,6 +192,7 @@
 .contact-form button {
   margin-top: 0.5rem;
   justify-self: start;
+  width: 100%;
 }
 
 .faq-section {
