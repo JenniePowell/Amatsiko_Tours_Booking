@@ -1,15 +1,10 @@
-import { useAuth0 } from '@auth0/auth0-react';
 import { Navigate, useLocation } from 'react-router-dom';
+import { isLoggedIn } from '../auth/auth';
 
 function ProtectedRoute({ children }) {
-  const { isAuthenticated, isLoading } = useAuth0();
   const location = useLocation();
 
-  if (isLoading) {
-    return <p className="auth-loading">Loading...</p>;
-  }
-
-  if (!isAuthenticated) {
+  if (!isLoggedIn()) {
     return <Navigate to="/login" state={{ from: location }} replace />;
   }
 
