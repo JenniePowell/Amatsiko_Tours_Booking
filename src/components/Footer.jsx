@@ -35,7 +35,6 @@ function Footer() {
           <NavLink to="/tours">Tours</NavLink>
           <NavLink to="/">Gallery</NavLink>
           <NavLink to="/">About</NavLink>
-          <NavLink to="/tours">Book a tour</NavLink>
           <NavLink to="/contact">Contact us</NavLink>
         </div>
 
