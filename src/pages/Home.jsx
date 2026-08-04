@@ -380,9 +380,6 @@ function Home() {
           <Link to="/tours" className="btn btn-primary">
             Explore tours
           </Link>
-          <Link to="/bookings" className="btn btn-outline-white btn-line">
-            View bookings
-          </Link>
         </div>
       </section>
       </div>
