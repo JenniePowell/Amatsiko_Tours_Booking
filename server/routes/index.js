@@ -1,8 +1,8 @@
 const router = require("express").Router();
+
 const tourRoutes = require("./tour");
 const testimonialRoutes = require("./testimonial");
 const userRoutes = require("./user");
-const bookingRoutes = require("./booking");
 
 router.get("/api", (req, res) => {
   res.json({ message: "Welcome to the API" });

@@ -170,4 +170,5 @@ const seedDatabase = async () => {
   process.exit(0);
 };
 
+// Call seedDatabase function
 seedDatabase();
