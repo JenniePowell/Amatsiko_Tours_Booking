@@ -1,0 +1,35 @@
+.tour-map-wrapper {
+  margin: 2.5rem 0;
+}
+
+.tour-map {
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  z-index: 1; 
+}
+
+.tour-map-status {
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDF0E4;
+  border-radius: 16px;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.tour-map-note {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .tour-map,
+  .tour-map-status {
+    height: 280px;
+  }
+}
