@@ -34,8 +34,6 @@ function Footer() {
           <NavLink to="/how-to-book">How To Book</NavLink>
           <NavLink to="/tours">Tours</NavLink>
           <NavLink to="/gallery">Gallery</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/book-a-tour">Book a tour</NavLink>
           <NavLink to="/contact">Contact us</NavLink>
         </div>
 
@@ -52,7 +50,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>© 2026 Amatsiko Tours. All rights reserved.</span>
+        <span>© 2026 Amatsiko Tours. All rights reserved. Created by Martin, Dee & Jennie</span>
       </div>
     </footer>
   );

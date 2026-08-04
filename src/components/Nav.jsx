@@ -21,6 +21,7 @@ function Nav() {
           <NavLink to="/" end>Home</NavLink>
           <NavLink to="/tours">Tours</NavLink>
           <NavLink to="/my-bookings">My Bookings</NavLink>
+          <NavLink to="/contact">Contact</NavLink>
 
           {loggedIn && (
             <button
