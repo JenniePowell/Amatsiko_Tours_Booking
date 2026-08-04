@@ -6,7 +6,7 @@
   width: 100%;
   height: 380px;
   border-radius: 16px;
-  z-index: 1; /* keep Leaflet's internal z-index below your nav/dropdowns */
+  z-index: 1; 
 }
 
 .tour-map-status {

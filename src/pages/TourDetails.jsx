@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import tours from '../data/tours';
+import TourMap from '../components/TourMap.jsx';
 import "./TourDetails.css";
 
 function TourDetails() {
@@ -149,6 +150,7 @@ function TourDetails() {
 
       {(tour.itinerary || tour.highlights || tour.packingTip) && (
         <section className="tour-lower-section">
+          
           {tour.itinerary && (
             <div className="tour-itinerary">
               <h2>Itinerary</h2>
@@ -162,6 +164,8 @@ function TourDetails() {
             </div>
           )}
 
+          {tour.location && <TourMap location={tour.location} />}
+
           <div className="tour-lower-grid">
             {tour.highlights && (
               <div className="tour-highlights-box">
@@ -171,10 +175,11 @@ function TourDetails() {
                 </ul>
               </div>
             )}
-            
+
           </div>
         </section>
       )}
+      
        <section className="tour-cta-banner">
         <div className="tour-cta-content">
           <h2>Ready To Create Memories That Last A Lifetime?</h2>
