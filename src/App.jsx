@@ -14,10 +14,12 @@ import HowToBook from "./pages/HowToBook";
 import Gallery from "./pages/Gallery";
 import BookATour from "./pages/BookATour";
 import ProtectedRoute from "./auth/ProtectedRoute";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
       <div className="app">
+        <ScrollToTop />
         <Nav />
 
         <main className="main-content">
