@@ -2,9 +2,6 @@ import { useEffect } from "react";
 import {useAuth0} from "@auth0/auth0-react";
 import { useLocation } from "react-router-dom";
 
-import { useEffect } from "react";
-import {useAuth0} from "@auth0/auth0-react";
-import { useLocation } from "react-router-dom";
 
 function Login() {
   const { loginWithRedirect, isAuthenticated, isLoading } = useAuth0();
