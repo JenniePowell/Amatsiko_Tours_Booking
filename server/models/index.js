@@ -20,4 +20,4 @@ Booking.belongsTo(Tour, {
   foreignKey: "tour_id",
 });
 
-module.exports = { User, Tour, Testimonial };
+module.exports = { User, Tour, Booking, Testimonial };

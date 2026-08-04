@@ -5,9 +5,10 @@ const path = require("path");
 
 const sequelize = require("./config/connection");
 const routes = require("./routes");
+const cors = require("cors");
 
-// Initialize Express application
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 

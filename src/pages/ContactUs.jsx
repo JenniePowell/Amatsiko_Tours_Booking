@@ -226,16 +226,14 @@ function ContactUs() {
                 className="faq-question"
                 onClick={() => toggleFaq(index)}
               >
-                <span>{faq.question}</span>
-                <i
-                  className={
-                    openFaq === index
-                      ? "bi bi-chevron-up"
-                      : "bi bi-chevron-down"
-                  }
-                ></i>
+                <span>
+                  <span className="faq-icon">
+                    {openFaq === index ? "\u2212    " : "+    "}
+                  </span>
+                  {faq.question}
+                </span>
               </button>
-
+ 
               {openFaq === index && <p className="faq-answer">{faq.answer}</p>}
             </div>
           ))}

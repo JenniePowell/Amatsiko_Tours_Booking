@@ -1,10 +1,16 @@
-import { NavLink } from 'react-router-dom';
-import { useAuth0 } from '@auth0/auth0-react';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { isLoggedIn, clearToken } from '../auth/auth';
 import logo from "../assets/logo.png";
 import "./Nav.css";
 
 function Nav() {
-  const { isAuthenticated, isLoading, user, logout, loginWithRedirect } = useAuth0();
+  const navigate = useNavigate();
+  const loggedIn = isLoggedIn();
+
+  const handleLogout = () => {
+    clearToken();
+    navigate("/");
+  };
 
   return (
     <header>
@@ -17,35 +23,20 @@ function Nav() {
           <NavLink to="/my-bookings">My Bookings</NavLink>
           <NavLink to="/contact">Contact</NavLink>
 
-          {!isLoading && isAuthenticated && (
-            <>
-              <span className="nav-user">{user?.name}</span>
-              <button
-                type="button"
-                className="nav-link-btn"
-                onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
-              >
-                Log Out
-              </button>
-            </>
+          {loggedIn && (
+            <button
+              type="button"
+              className="nav-link-btn"
+              onClick={handleLogout}
+            >
+              Log Out
+            </button>
           )}
 
-          {!isLoading && !isAuthenticated && (
+          {!loggedIn && (
             <>
-              <button
-                type="button"
-                className="nav-link-btn"
-                onClick={() => loginWithRedirect()}
-              >
-                Log In
-              </button>
-              <button
-                type="button"
-                className="nav-link-btn"
-                onClick={() => loginWithRedirect({ authorizationParams: { screen_hint: "signup" } })}
-              >
-                Register
-              </button>
+              <NavLink to="/login" className="nav-link-btn">Log In</NavLink>
+              <NavLink to="/register" className="nav-link-btn">Register</NavLink>
             </>
           )}
         </div>

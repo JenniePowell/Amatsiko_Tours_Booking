@@ -20,8 +20,7 @@ function Tours() {
     <>
       <section className="hero">
         <div className="hero-content">
-          <h1>Explore Tours</h1>
-          <p>Authentic safaris and unforgettable adventures</p>
+          <h1>Explore Ugandan Tours</h1>
         </div>
         <img src={africanPrint} className="hero-pattern"/>
 

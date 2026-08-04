@@ -1,35 +1,58 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { getToken } from '../auth/auth';
 import "./BookingForm.css";
 
-
 function BookingForm({ tour, onClose }) {
-    const [formData, setFormData] = useState({
-        travelDate: '',
-        numberOfGuests: 1,
-        notes: '',
-    });
+  const navigate = useNavigate();
 
-const handleChange = (event) => {
+  const [formData, setFormData] = useState({
+    travelDate: '',
+    numberOfGuests: 1,
+    notes: '',
+  });
+  const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleChange = (event) => {
     const { name, value } = event.target;
-
     setFormData((currentData) => ({
       ...currentData,
       [name]: value,
     }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
+    setError("");
+    setSubmitting(true);
 
-    const booking = {
-      tourId: tour.id,
-      tourTitle: tour.title,
-      ...formData,
-      numberOfGuests: Number(formData.numberOfGuests),
-    };
+    try {
+      const response = await fetch("http://localhost:3001/api/bookings", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${getToken()}`,
+        },
+        body: JSON.stringify({
+          tour_id: tour.id,
+          travel_date: formData.travelDate,
+          travellers: Number(formData.numberOfGuests),
+        }),
+      });
 
-    console.log('Booking submitted:', booking);
-    alert(`Booking request submitted for ${tour.title}`);
+      if (!response.ok) {
+        setError("Could not submit your booking. Please try again.");
+        setSubmitting(false);
+        return;
+      }
+
+      navigate("/my-bookings");
+    } catch (err) {
+      console.error(err);
+      setError("Could not reach the server.");
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -85,7 +108,11 @@ const handleChange = (event) => {
           placeholder="Tell us about any requirements or questions"
         />
 
-        <button type="submit">Submit booking request</button>
+        {error && <p style={{ color: "red" }}>{error}</p>}
+
+        <button type="submit" disabled={submitting}>
+          {submitting ? "Submitting..." : "Submit booking request"}
+        </button>
       </form>
     </section>
   );
