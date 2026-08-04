@@ -1,59 +1,68 @@
 .hero {
   position: relative;
+  overflow: visible;
   height: 45vh;
+  min-height: 320px;
+  max-height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-left: max(2rem, calc((100vw - 1180px) / 2));
+  padding-right: 2rem;
+
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0)
     ), url("../assets/safari.jpg");
+
   background-size: cover;
   background-position: center;
-
-  display: flex;
-  justify-content: left;
-  padding-left: 60px;
-  align-items: center;
 }
 
 .custom-shape-divider-bottom-1785438866 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1785438866 svg {
-    position: relative;
-    display: block;
-    width: calc(149% + 1.3px);
-    height: 91px;
-    transform: rotateY(180deg);
+  display: block;
+  width: calc(149% + 1.3px);
+  height: 91px;
+  transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-1785438866 .shape-fill {
-    fill: #f7f1e8;
+  fill: #f7f1e8;
 }
 
 .hero h1 {
   font-size: 50px;
+  color: white;
+  margin-top: 35px;
 }
 
-.hero-content {
+.hero-content p {
+  font-size: 20.8px;
   text-align: left;
   color: white;
 }
 
 .hero-pattern {
   position: absolute;
-  bottom: -100px;
-  right: -50px;
+  right: -70px;
+  bottom: -60px;
   width: 280px; 
   height: auto;
   opacity: 0.5;
-  z-index: 2;
+  z-index: 3;
 }
 
 .tours-section h2 {

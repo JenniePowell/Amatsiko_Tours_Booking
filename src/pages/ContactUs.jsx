@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./ContactUs.css";
+import africanPrint from "../assets/african-print.png";
 
 const galleryImages = [
   { src: "/images/20220412_122144.webp", alt: "Elephant among green bushes in Uganda" },
@@ -89,8 +90,24 @@ function ContactUs() {
       <section className="contact-hero">
         <div className="contact-hero-overlay">
           <h1>Contact Us</h1>
-          <p>Got a Question? We're Here to Help!</p>
+          <p>Got a question? We're here to help!</p>
         </div>
+
+        <img src={africanPrint} className="contact-hero-pattern" aria-hidden="true"/>
+
+      <div className="custom-shape-divider-bottom-1785438866">
+  <svg
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1200 120"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+      className="shape-fill"
+    />
+  </svg>
+</div>
       </section>
 
       <section className="contact-intro">
@@ -149,7 +166,6 @@ function ContactUs() {
         <div className="contact-form-inner">
           <h2>Send us a message</h2>
           <form className="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="name">Your Name *</label>
             <input
               type="text"
               id="name"
@@ -160,7 +176,6 @@ function ContactUs() {
               required
             />
 
-            <label htmlFor="email">Email Address *</label>
             <input
               type="email"
               id="email"
@@ -171,7 +186,6 @@ function ContactUs() {
               required
             />
 
-            <label htmlFor="phone">Phone</label>
             <input
               type="tel"
               id="phone"
@@ -181,7 +195,6 @@ function ContactUs() {
               onChange={handleChange}
             />
 
-            <label htmlFor="message">Message *</label>
             <textarea
               id="message"
               name="message"
@@ -200,9 +213,9 @@ function ContactUs() {
       <section className="faq-section">
         <h2>Frequently asked questions</h2>
         <p className="faq-intro">
-          We understand you might have questions before booking your tour. Here
-          are some common queries. If you don't find what you're looking for,
-          feel free to contact us directly!
+          Planning a trip to Uganda is exciting, and we're sure you'll have a few
+  questions. Here are answers to some of the ones we're asked most often.
+  If you need anything else, please <a href="mailto:info@amatsikotours.com" className="faq-link">get in touch</a>.
         </p>
 
         <div className="faq-list">
