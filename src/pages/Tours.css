@@ -34,7 +34,7 @@
 }
 
 .custom-shape-divider-bottom-1785438866 .shape-fill {
-    fill: #FFFFFF;
+    fill: #f7f1e8;
 }
 
 .hero h1 {
@@ -62,9 +62,10 @@
 }
 
 .tours-section {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
   padding: 3rem 2rem;
+  background-color: #f7f1e8;
 }
 
 .tours-layout {

@@ -10,6 +10,7 @@ import waterSafariImg from "../assets/water-safari.jpg";
 import giraffesImg from "../assets/giraffes.jpg";
 import "./Home.css";
 
+
 // Id's of the tours to feature on the homepage
 const sevenDayTour = tours.find((t) => t.id === 27);
 const tenDayTour = tours.find((t) => t.id === 1);
@@ -106,8 +107,7 @@ function Home() {
       {/* First Section */}
       <section
         className="secondary-background-img"
-        style={{ backgroundImage: `url(${safariHero})` }}
-      >
+        style={{ backgroundImage: "url('/images/lake.webp')" }}>
         <div className="hero-content">
           <span className="eyebrow">Impact-Led Travel Experiences in Uganda</span>
           <h1>Experience Uganda beyond the safari</h1>
@@ -244,14 +244,14 @@ function Home() {
             When you travel with us, you're not just visiting. You're
             contributing to something meaningful.
           </p>
-          <Link to="/about" className="btn btn-primary">
-            See your impact
+          <Link to="/tours" className="btn btn-primary">
+            Book Your Trip
           </Link>
         </div>
 
         <div className="impact-intro-images">
-          <img src={"public/images/locals 7.jpeg"} alt="Local community by the water in Uganda" />
-          <img src={"public/images/locals 8.jpeg"} alt="Local children in Uganda" />
+          <img src={"/images/locals 7.jpeg"} alt="Local community by the water in Uganda" />
+          <img src={"/images/locals 8.jpeg"} alt="Local children in Uganda" />
         </div>
       </section>
 
@@ -380,8 +380,8 @@ function Home() {
           <Link to="/tours" className="btn btn-primary">
             Explore tours
           </Link>
-          <Link to="/tours" className="btn btn-outline-white btn-line">
-            Plan your trip
+          <Link to="/bookings" className="btn btn-outline-white btn-line">
+            View bookings
           </Link>
         </div>
       </section>

@@ -228,7 +228,6 @@
     url("../assets/safari.jpg");
   background-size: cover;
   background-position: center;
-  margin: 3rem 0;
   padding: 3rem 4rem;
   display: flex;
   justify-content: space-between;
