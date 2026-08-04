@@ -130,7 +130,7 @@ function TourMap({ location }) {
             pathOptions={{
               color: '#023220',
               weight: 2,
-              fillColor: '#ca1212',
+              fillColor: '#E2725C',
               fillOpacity: 1,
             }}
           >
@@ -141,7 +141,7 @@ function TourMap({ location }) {
         {points.length > 1 && (
           <Polyline
             positions={points.map((p) => [p.lat, p.lng])}
-            pathOptions={{ color: '#df8682', weight: 5, dashArray: '1' }}
+            pathOptions={{ color: '#E2725C', weight: 5, dashArray: '3 9' }}
           />
         )}
 

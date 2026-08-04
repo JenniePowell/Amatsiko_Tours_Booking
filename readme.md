@@ -46,16 +46,32 @@ quit;
 
 ### 3. Set up backend environment variables
 
-The backend needs a `.env` file with your database credentials. A template is provided.
+The backend needs a `.env` file with your database credentials.
 
-Copy `server/.env.example` to a new file called `server/.env`, then open `server/.env` and set `DB_PASSWORD` to **your** MySQL root password:
-SECRET_KEY=SecretSecretSecretShhhhhh!
+**Copy the `.env.example` file** and rename it to `.env`, then update the values (DB_PASSWORD, SECRET_KEY).
+
+```bash
+# Copy the example env file
+cp server/.env.example server/.env
+```
+
+Your `server/.env` should contain:
+```
+SECRET_KEY=
 DB_DATABASE=tours_db
 DB_USERNAME=root
-DB_PASSWORD=your_mysql_password_here
+DB_PASSWORD= "Your MySQL Password"
 DB_HOST=localhost
 DB_DIALECT=mysql
 DB_PORT=3306
+DB_PORT=3306
+```
+To generate a random string for a **SECRET_KEY** use:
+
+```bash      
+node -e "console.log(require('crypto').randomBytes(12).toString('hex'))"
+```      
+
 
 ### 4. Install backend dependencies and seed the database
 

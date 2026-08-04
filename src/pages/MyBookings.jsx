@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getToken } from "../auth/auth";
+import "./MyBookings.css";
 
 function MyBookings() {
   const [bookings, setBookings] = useState([]);
@@ -83,42 +84,49 @@ function MyBookings() {
       {!loading && !error && bookings.length > 0 && (
         <ul className="bookings-list">
           {bookings.map((booking) => (
-            <li className="booking-card" key={booking.id}>
-              <h3>
-                {booking.tour ? booking.tour.title : "Tour"}
-              </h3>
+              <li className="booking-card" key={booking.id}>
 
-              <div className="booking-details">
-                <p>
-                  <i className="bi bi-calendar-event" aria-hidden="true"></i>
-                  <span>
-                    <strong>Travel date:</strong> {booking.travel_date}
-                  </span>
-                </p>
+      <div className="booking-card-body">
+        <div className="booking-card-header">
+          <h3>{booking.tour ? booking.tour.title : "Tour"}</h3>
+          <span className="booking-status">Confirmed</span>
+        </div>
 
-                <p>
-                  <i className="bi bi-people" aria-hidden="true"></i>
-                  <span>
-                    <strong>Travellers:</strong> {booking.travellers}
-                  </span>
-                </p>
+        <div className="booking-details">
+          <p>
+            <i className="bi bi-calendar-event" aria-hidden="true"></i>
+            <span>
+              <strong>Travel date</strong>
+              {booking.travel_date}
+            </span>
+          </p>
 
-                <p>
-                  <i className="bi bi-cash-coin" aria-hidden="true"></i>
-                  <span>
-                    <strong>Total price:</strong> ${booking.total_price}
-                  </span>
-                </p>
-              </div>
+          <p>
+            <i className="bi bi-people" aria-hidden="true"></i>
+            <span>
+              <strong>Travellers</strong>
+              {booking.travellers}
+            </span>
+          </p>
 
-              <button
-                className="cancel-booking-button"
-                type="button"
-                onClick={() => handleCancel(booking.id)}
-              >
-                Cancel Booking
-              </button>
-            </li>
+          <p>
+            <i className="bi bi-cash-coin" aria-hidden="true"></i>
+            <span>
+              <strong>Total price</strong>
+              ${booking.total_price}
+            </span>
+          </p>
+        </div>
+
+        <button
+          className="cancel-booking-button"
+          type="button"
+          onClick={() => handleCancel(booking.id)}
+        >
+          Cancel Booking
+        </button>
+      </div>
+    </li>
           ))}
         </ul>
       )}
